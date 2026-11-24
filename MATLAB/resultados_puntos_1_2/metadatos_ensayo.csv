@@ -1,0 +1,2 @@
+reference_step_v,output_limit_v,output_headroom,max_safe_reference_v,calibration_status,adc_offset_v,adc_v_per_plant_v,dac_v_per_count,dac_positive_gain,dac_negative_gain,actuator_offset_v,actuator_slope,actuator_fit_rmse_v,readback_slope,readback_intercept_v,readback_fit_rmse_v,validation_capture
+0.05,1,0.9,0.111092580219717,REVALIDADA_LAB5_20261120_231219,2.353802067,0.210251951,0.004,3.842612,2.640105691,0.017209,0.98171,0.00096675,1.017,8.1355e-05,0.0033743,lab5_calibracion_final_circuito_cerrado_v4_20261120_231219

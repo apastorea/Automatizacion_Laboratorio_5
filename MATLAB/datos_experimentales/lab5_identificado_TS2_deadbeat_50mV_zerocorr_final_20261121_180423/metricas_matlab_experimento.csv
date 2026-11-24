@@ -1,0 +1,16 @@
+metric,value,unit
+sample_period_experimental,0.00192,s
+reference_experimental,0.05,V
+reference_simulation,0.05,V
+runtime_zero_offset,-0.0499375,V
+initial_output_experimental,0,V
+effective_step_simulation,0.05,V
+output_peak_experimental,0.061,V
+control_peak_applied_experimental,0.277,V
+output_steady_mean_experimental,0.05015625,V
+output_steady_p2p_experimental,0.011,V
+output_rmse_model_vs_experiment,0.00275881260512722,V
+control_rmse_model_vs_applied,0.0153053419973909,V
+control_rmse_model_vs_requested,0.015797530968017,V
+settling_time_10pct_experimental,0.4128,s
+flagged_samples,0,count

@@ -1,0 +1,23 @@
+# MATLAB
+*.asv
+slprj/
+codegen/
+
+# PSoC Creator: archivos locales y productos regenerables
+*.cywrk.*
+*.cyprj.*
+Generated_Source/
+codegentemp/
+CortexM3/
+Export/
+*.log
+*.rpt
+*.cyfit
+*.svd
+
+# LaTeX: productos intermedios
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz

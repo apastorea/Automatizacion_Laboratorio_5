@@ -1,0 +1,50 @@
+LABORATORIO 5 - PUNTOS 1 Y 2
+================================
+
+MODELO CONTINUO NOMINAL
+Gp(s) numerador: 0 0 142805.198436
+Gp(s) denominador: 1 1401.58789825 142386.439916
+Ganancia estatica = 1.002941
+Polos [rad/s]: -1291.32398157 -110.263916685
+Ancho de banda = 109.216451287 rad/s = 17.3823380893 Hz
+
+MUESTREO
+Caso 1: criterio 10fB, Ts ideal 0.005752966 s, Ts real 0.00575 s, fs 173.913043 Hz, Period 574
+Caso 2: criterio 30fB, Ts ideal 0.00191765533 s, Ts real 0.00192 s, fs 520.833333 Hz, Period 191
+
+AMPLITUD Y CALIBRACION
+Escalon fisico usado en TODAS las simulaciones = 0.05 V
+Maximo escalon recomendado con margen = 0.11109258 V
+Estado de calibracion = REVALIDADA_LAB5_20261120_231219
+ADC: Vadc = offset + escala*y, offset 2.353802067 V, escala 0.210251951 V/V
+Conversion inversa documentada: y[V] = (Vadc[V] - offset[V]) / escala[V/V]
+Actuador medido: J5_crudo = 0.98171*u_aplicada + 0.017209 V, RMSE 0.00096675 V
+Lectura medida: J7_crudo = 1.017*y_ADC + 8.1355e-05 V, RMSE 0.0033743 V
+Captura de validacion = lab5_calibracion_final_circuito_cerrado_v4_20261120_231219
+Las comparaciones deben mostrar el dato crudo y declarar por separado cualquier correccion de offset.
+
+CONTROLADORES
+Caso Ts1 - oscilatorio, Ts = 0.00575 s
+C(z) b = 2.37354227458 -1.26047553092 0.000750517983604
+C(z) a = 1 -0.88290700179 -0.11709299821
+u[k] = 2.37354227458 e[k] + -1.26047553092 e[k-1] + 0.000750517983604 e[k-2] +0.88290700179 u[k-1] +0.11709299821 u[k-2]
+tr = 4.17502 ms, ts = 10.4347 ms, Mp = 7.6528 %, u_unit = [0.835142, 2.37354], u_fisico = [0.0417571, 0.118677] V
+
+Caso Ts1 - deadbeat, Ts = 0.00575 s
+C(z) b = 2.12474903914 -1.12835326417 0.000671849152046
+C(z) a = 1 -0.895180617551 -0.104819382449
+u[k] = 2.12474903914 e[k] + -1.12835326417 e[k-1] + 0.000671849152046 e[k-2] +0.895180617551 u[k-1] +0.104819382449 u[k-2]
+tr = 4.78004 ms, ts = 7.0177 ms, Mp = 0 %, u_unit = [0.996396, 2.12475], u_fisico = [0.0498198, 0.106237] V
+
+Caso Ts2 - oscilatorio, Ts = 0.00192 s
+C(z) b = 8.10135112732 -7.23450921823 0.5493508827
+C(z) a = 1 -0.579642185206 -0.420357814794
+u[k] = 8.10135112732 e[k] + -7.23450921823 e[k-1] + 0.5493508827 e[k-2] +0.579642185206 u[k-1] +0.420357814794 u[k-2]
+tr = 1.31791 ms, ts = 7.26945 ms, Mp = 22.3118 %, u_unit = [-2.53862, 8.10135], u_fisico = [-0.126931, 0.405068] V
+
+Caso Ts2 - deadbeat, Ts = 0.00192 s
+C(z) b = 5.70373960909 -5.09344134476 0.386769359789
+C(z) a = 1 -0.704047944528 -0.295952055472
+u[k] = 5.70373960909 e[k] + -5.09344134476 e[k-1] + 0.386769359789 e[k-2] +0.704047944528 u[k-1] +0.295952055472 u[k-2]
+tr = 1.94163 ms, ts = 3.12753 ms, Mp = 1.15019e-11 %, u_unit = [0.610298, 5.70374], u_fisico = [0.0305149, 0.285187] V
+

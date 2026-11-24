@@ -1,0 +1,18 @@
+{
+  "capturedAt": "2026-11-21T18:03:26-03:00",
+  "resource": "USB0::0x1AB1::0x0517::DS1ZE275014864::0::INSTR",
+  "idn": "RIGOL TECHNOLOGIES,DS1202Z-E,DS1ZE275014864,00.06.04",
+  "label": "identificado_TS2_oscillatory_50mV_zerocorr_scopefinal",
+  "mode": "CONTROL",
+  "forceDelay_s": 3.15,
+  "triggerState": "STOP",
+  "physicalTriggerDetected": true,
+  "triggerWasForced": false,
+  "timeScale_s_div": 0.01,
+  "ch1Scale_V_div": 0.2,
+  "ch2Scale_V_div": 0.02,
+  "channelMap": {
+    "CH1": "J5: mando fisico u(t)",
+    "CH2": "J7: salida de planta y(t)"
+  }
+}

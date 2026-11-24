@@ -1,0 +1,3 @@
+channel,location,mean_V,std_V,min_V,max_V
+CH1,J5: mando fisico u(t),0.0353333333333333,0.0616385294477621,-0.144,0.456
+CH2,J7: salida de planta y(t),0.0341273333333333,0.0247577201456683,0.0024,0.076
